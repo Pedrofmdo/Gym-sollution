@@ -1,0 +1,100 @@
+/* Reset de estilos para o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000; /* Preto */
+    color: #fff; /* Branco */
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #000000; /* Vinho escuro */
+    text-align: center;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column; /* Ajuste a direção para coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 2vh; /* Define a altura para ocupar toda a altura da viewport */
+}
+
+
+/* Estilos para o botão de voltar */
+.back-button {
+    background-color: #690909; /* Vinho mais claro */
+    color: #fff; /* Branco */
+    padding: 2vh;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 1vh; /* Adiciona margem inferior para espaçamento */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #c70039; /* Vinho mais escuro */
+}
+
+/* Estilos para a logo */
+
+/* Estilos para a imagem do ebook */
+.ebook img {
+    max-width: 30vw;
+    margin-right: 2vw;
+    border-radius: 8px;
+}
+
+/* Estilos para a informação do ebook */
+.ebook-info {
+    flex-grow: 1;
+}
+
+/* Estilos para os títulos */
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #310101; /* Branco */
+    background-color: #414141; /* Vinho mais claro */
+    border: 2px solid #222222; /* Borda cinza */
+    padding: 10px; /* Adiciona um espaçamento interno maior */
+    margin: 0; /* Remove margens padrão */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para a lista não ordenada */
+.lista {
+    display: flex;
+    list-style: none;
+    width: 70vw;
+    margin-top: 2rem ; /* Cria uma margem do topo */
+    padding: 0;
+    flex-wrap: wrap; /* permite que os itens quebrem linha */
+    justify-content: flex-start; /* alinha os itens no inicio */
+    text-align: center;
+    gap: 2vw; /* Adiciona um espaçamento entre os itens */
+}
+
+/* Estilos para os itens da lista */
+.cards {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #222; /* Cor de fundo mais escura */
+    padding: 10px; /* Espaçamento interno para cada item */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease-in-out;
+    width: 10vw;
+    height: 20vh;
+}
+
+.cards:hover {
+    background-color: #333; /* Cor de fundo mais escura no hover */
+}
+
+.conteudo-ebook{
+    justify-content: center; /* alinha os itens no centro */
+    align-items: center ; /*alinha os itens no centro */
+    display: flex;
+    height: auto; /* altura automática (cresce de acordo com a quantidade de conteudo)*/
+}

@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #690909; /* Preto */
+    color: #fff; /* Branco */
+}
+
+header {
+    background-color: #000000; /* Vinho escuro */
+    text-align: center;
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Branco */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #c70039; /* Vinho mais claro */
+}
+
+.ebook {
+    display: flex;
+    margin: 2vh;
+    padding: 2vh;
+    background-color: #111; /* Preto mais escuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.ebook img {
+    max-width: 13vw; /* Adjust the maximum width of the ebook image */
+    height: auto;
+    margin-right: 2vw;
+    border-radius: 8px;
+}
+
+.ebook-info {
+    flex-grow: 1;
+}
+
+.saiba-mais-btn {
+    background-color: #690909; /* Vinho mais claro */
+    color: #fff; /* Branco */
+    padding: 2vh;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #310101; /* Branco */
+    background-color: #414141; /* Vinho mais claro */
+    border: 2px solid #222222; /* Borda cinza */
+    padding: 10px; /* Adiciona um espaçamento interno maior */
+    margin: 0; /* Remove margens padrão */
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.logo img {
+    width: 35vw;
+    height: 10vw;
+    border-radius: 10px;
+   
+    
+}
+
+.saiba-mais-btn,
+.comprar-btn {
+    background-color: #690909; /* Vinho mais claro */
+    color: #fff; /* Branco */
+    padding: 2vh;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.saiba-mais-btn:hover,
+.comprar-btn:hover {
+    background-color: #c70039; /* Vinho mais escuro */
+}
+
+.comprar-btn {
+    margin-top: 1vh; /* Adicione margem superior para separar os botões */
+}
+
+/* Add styles for social icons and phone number */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of social icons */
+    border-radius: 50%; /* Make the social icons circular */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarge the social icons on hover */
+}
+
+.social-icons p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Adiciona margem à esquerda para separar os ícones do logo */
+.social-icons {
+    margin-left: auto;
+}
