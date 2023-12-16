@@ -37,14 +37,6 @@ header {
     background-color: #c70039; /* Vinho mais escuro */
 }
 
-/* Estilos para a logo */
-
-/* Estilos para a imagem do ebook */
-.ebook img {
-    max-width: 30vw;
-    margin-right: 2vw;
-    border-radius: 8px;
-}
 
 /* Estilos para a informação do ebook */
 .ebook-info {
@@ -67,29 +59,56 @@ h2 {
 .lista {
     display: flex;
     list-style: none;
-    width: 70vw;
+    width: 50vw;
     margin-top: 2rem ; /* Cria uma margem do topo */
     padding: 0;
     flex-wrap: wrap; /* permite que os itens quebrem linha */
     justify-content: flex-start; /* alinha os itens no inicio */
     text-align: center;
-    gap: 2vw; /* Adiciona um espaçamento entre os itens */
+    gap: 5vw; /* Adiciona um espaçamento entre os itens */
 }
 
 /* Estilos para os itens da lista */
 .cards {
-    font-size: 18px;
-    margin-bottom: 10px;
-    background-color: #222; /* Cor de fundo mais escura */
-    padding: 10px; /* Espaçamento interno para cada item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    text-align:start;
+    padding: 5vh; /* Espaçamento interno para cada item usando viewport height */
     border-radius: 5px; /* Borda arredondada */
     transition: background-color 0.3s ease-in-out;
-    width: 10vw;
-    height: 20vh;
+    width: 105vw; /* 60% da largura do contêiner pai */
+    height: 150vh; /* 60% da altura da viewport */
+    background-color: #353535; /* Cor de fundo mais escura */
+    margin: auto; /* Adiciona margens automáticas para centralizar o elemento */
+    direction: ltr; /* Define a direção do texto como da esquerda para a direita */
+    line-height: 2; /* Espaçamento entre as linhas */
 }
+
+.cards > * {
+    margin: 2vh 0; /* Adapte conforme necessário para o espaçamento entre os elementos dentro dos cards usando viewport height */
+    font-size: 17px; /* Tamanho da fonte usando viewport height */
+    font-weight: bold; /* Fonte em negrito */
+    color: rgb(53, 4, 4); /* Cor do texto */
+}
+
 
 .cards:hover {
     background-color: #333; /* Cor de fundo mais escura no hover */
+}
+.cards > ul {
+    list-style-type: none; /* Remove marcadores de lista padrão */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+
+
+.cards > ul > li::before {
+    content: "•"; /* Adiciona marcadores personalizados */
+    color: #000000; /* Cor do marcador */
+    margin-right: 8px; /* Espaçamento entre o marcador e o texto */
+    font-size: 1em;
 }
 
 .conteudo-ebook{
