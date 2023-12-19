@@ -63,7 +63,7 @@ h2 {
 .lista {
     display: flex;
     list-style: none;
-    width: 70%;
+    width: 75%;
     margin-top: 2rem ; /* Cria uma margem do topo */
     padding: 0;
     flex-wrap: wrap; /* permite que os itens quebrem linha */
@@ -81,8 +81,8 @@ h2 {
     padding: 5vh; /* Espaçamento interno para cada item usando viewport height */
     border-radius: 5px; /* Borda arredondada */
     transition: background-color 0.3s ease-in-out;
-    width: 80%; /* 60% da largura do contêiner pai */
-    height: 90%; /* 60% da altura da viewport */
+    width: 100%; /* 60% da largura do contêiner pai */
+    height: 100%; /* 60% da altura da viewport */
     background-color: #444; /* Fundo cinza */
     margin: auto; /* Adiciona margens automáticas para centralizar o elemento */
     direction: ltr; /* Define a direção do texto como da esquerda para a direita */
