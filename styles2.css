@@ -18,6 +18,7 @@ header {
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
     height: 2vh; /* Define a altura para ocupar toda a altura da viewport */
+    
 }
 
 
@@ -50,10 +51,13 @@ h2 {
     background-color: #414141; /* Vinho mais claro */
     border: 2px solid #222222; /* Borda cinza */
     padding: 10px; /* Adiciona um espaçamento interno maior */
-    margin: 0; /* Remove margens padrão */
+    margin: 2vh 0; /* Remove margens padrão */
     border-radius: 10px;
     text-align: center;
+    
+
 }
+
 
 /* Estilos para a lista não ordenada */
 .lista {
@@ -73,22 +77,21 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
     text-align:start;
     padding: 5vh; /* Espaçamento interno para cada item usando viewport height */
     border-radius: 5px; /* Borda arredondada */
     transition: background-color 0.3s ease-in-out;
     width: 105vw; /* 60% da largura do contêiner pai */
     height: 150vh; /* 60% da altura da viewport */
-    background-color: #353535; /* Cor de fundo mais escura */
+    background-color: #444; /* Fundo cinza */
     margin: auto; /* Adiciona margens automáticas para centralizar o elemento */
     direction: ltr; /* Define a direção do texto como da esquerda para a direita */
     line-height: 2; /* Espaçamento entre as linhas */
-}
+    box-shadow: 0 0 2vw #690909, 0 0 4vw #690909, 0 0 6vw #690909; /* Adiciona sombras neon vermelhas adaptáveis ao redor do cards usando vw */}
 
 .cards > * {
     margin: 2vh 0; /* Adapte conforme necessário para o espaçamento entre os elementos dentro dos cards usando viewport height */
-    font-size: 17px; /* Tamanho da fonte usando viewport height */
+    font-size: 1,5vw; /* Tamanho da fonte usando viewport height */
     font-weight: bold; /* Fonte em negrito */
     color: rgb(53, 4, 4); /* Cor do texto */
 }
@@ -107,9 +110,13 @@ h2 {
 .cards > ul > li::before {
     content: "•"; /* Adiciona marcadores personalizados */
     color: #000000; /* Cor do marcador */
-    margin-right: 8px; /* Espaçamento entre o marcador e o texto */
+    margin-right: 1vw;/* Espaçamento entre o marcador e o texto */
     font-size: 1em;
+    text-shadow: 0 0 1vw #000000, 0 0 2vw #000000, 0 0 3vw #000000; /* Adiciona sombras neon pretas ao marcador usando vw */
+    
 }
+
+
 
 .conteudo-ebook{
     justify-content: center; /* alinha os itens no centro */
@@ -117,3 +124,7 @@ h2 {
     display: flex;
     height: auto; /* altura automática (cresce de acordo com a quantidade de conteudo)*/
 }
+.cards > ul > li .highlight {
+    color: #ffc107; /* Cor da palavra destacada */
+    font-weight: bold; /* Peso da fonte em negrito */
+    text-shadow: 0 0 0.5rem #ffc107, 0 0 1rem #ffc107, 0 0 1.5rem #ffc107; } /* Adiciona sombras neon usando rem *

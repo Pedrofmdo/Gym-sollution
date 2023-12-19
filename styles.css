@@ -44,15 +44,14 @@ nav a:hover {
     margin: 2vh;
     padding: 2vh;
     background-color: #111; /* Preto mais escuro */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 2vw; 
+    box-shadow: 0 0 3vw rgba(255, 255, 255, 0.1); /* Adiciona uma sombra neon adaptável à largura da viewport */
 }
 
 .ebook img {
     max-width: 13vw; /* Adjust the maximum width of the ebook image */
-    height: auto;
     margin-right: 2vw;
-    border-radius: 8px;
+    border-radius: 2vw;
 }
 
 .ebook-info {
@@ -75,16 +74,21 @@ h2 {
     color: #310101; /* Branco */
     background-color: #414141; /* Vinho mais claro */
     border: 2px solid #222222; /* Borda cinza */
-    padding: 10px; /* Adiciona um espaçamento interno maior */
+    padding: 1vw; /* Adiciona um espaçamento interno adaptável à largura da viewport */
     margin: 0; /* Remove margens padrão */
-    border-radius: 10px;
-    max-width: 400px;
+    border-radius: 2vw; /* Adapta o raio da borda à largura da viewport */
+    max-width: 40%; /* Define a largura máxima como 90% da largura da viewport */
+    text-align: center;
+    box-shadow: 0 0 2vw #310101; /* Adiciona uma sombra neon adaptável à largura da viewport */
+    font-weight: bold; /* Deixa o texto em negrito */
+
 }
+
 
 .logo img {
     width: 35vw;
     height: 10vw;
-    border-radius: 10px;
+    border-radius: 2vw;
    
     
 }
@@ -98,11 +102,12 @@ h2 {
     display: inline-block;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0 0 1vw #690909;
 }
 
 .saiba-mais-btn:hover,
 .comprar-btn:hover {
-    background-color: #c70039; /* Vinho mais escuro */
+    background-color: #520606; /* Vinho mais escuro */
 }
 
 .comprar-btn {
