@@ -63,7 +63,7 @@ h2 {
 .lista {
     display: flex;
     list-style: none;
-    width: 75%;
+    width: 85%;
     margin-top: 2rem ; /* Cria uma margem do topo */
     padding: 0;
     flex-wrap: wrap; /* permite que os itens quebrem linha */
