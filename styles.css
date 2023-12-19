@@ -49,9 +49,9 @@ nav a:hover {
 }
 
 .ebook img {
-    width: 25vw; /* Adjust the maximum width of the ebook image */
-    height: 20vw;
-    margin-right: 3vw;
+    width: 17vw; /* Adjust the maximum width of the ebook image */
+    height: 15vw;
+    margin-right: 5vw;
     border-radius: 2vw;
 }
 
@@ -76,9 +76,9 @@ h2 {
     background-color: #414141; /* Vinho mais claro */
     border: 2px solid #222222; /* Borda cinza */
     padding: 1vw; /* Adiciona um espaçamento interno adaptável à largura da viewport */
-    margin: 0; /* Remove margens padrão */
+    margin: 1; /* Remove margens padrão */
     border-radius: 2vw; /* Adapta o raio da borda à largura da viewport */
-    max-width: 75%; /* Define a largura máxima como 90% da largura da viewport */
+    width: 55vw; /* Define a largura máxima como 90% da largura da viewport */
     text-align: center;
     box-shadow: 0 0 2vw #310101; /* Adiciona uma sombra neon adaptável à largura da viewport */
     font-weight: bold; /* Deixa o texto em negrito */
