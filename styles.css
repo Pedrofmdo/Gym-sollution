@@ -1,126 +1,243 @@
+/* Estilos principais */
 body {
-    background-color: #000000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #000000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* Estilo dos ebooks */
+.ebook {
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário para o seu design */
+}
+
+.ebook img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border: none; /* Remova a borda anterior */
+  box-shadow: 0 0 20px #190519, 0 0 30px #190519, 0 0 40px #420101; /* Adiciona efeito neon */
+}
+
+.ebook-content {
+  background-color: #000000;
+  margin-top: 4vh;
+}
+
+/* Botões e preço */
+.price-box {
+  padding: 25px;
+  text-align: center;
+}
+
+button {
+  background-color: #1c0909;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #faf5e0, 0 0 30px #faf5e0, 0 0 40px #261c1c; /* Efeito neon */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #a44a76;
+}
+
+/* Títulos */
+h2 {
+  background: linear-gradient(45deg, #fc0015, #ff7300);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+  border-radius: 5px;
+  text-shadow: 0 0 2px #ffffff, 0 0 5px #190519, 0 0 10px #420101;
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1px;
+}
+
+li {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-weight: bold;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: #420101;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+h3 {
+  color: #ffffff;
+  background: linear-gradient(45deg, #860101, #ff7300);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+  text-shadow: 0 0 2px #ffffff, 0 0 5px #190519, 0 0 10px #420101;
+  margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+h1 {
+  color: #ffffff; /* Cor do texto padrão */
+  font-style: italic;
+}
+
+.bulking {
+  color: #4CAF50; /* Cor para destacar "Bulking" */
+  font-style: italic;
+}
+
+.cutting {
+  color: #FF0000; /* Cor para destacar "Cutting" */
+  font-style: italic;
+}
+
+/* Estilo do quadrado com o texto (promoção) */
+.promo-box {
+  background-color: #111;  /* Cor de fundo escura para o quadrado */
+  padding: 10px 20px;  /* Espaçamento interno do quadrado */
+  border-radius: 10px;  /* Bordas arredondadas */
+  text-align: center;  /* Centraliza o texto dentro do quadrado */
+  width: auto;  /* A largura do quadrado se ajusta ao conteúdo */
+  max-width: 150px;  /* Largura máxima do quadrado */
+  margin: 20px 0; /* Adiciona margem para espaçamento acima e abaixo */
+  animation: neonAnimation 1.5s ease-in-out infinite alternate;  /* Animação do efeito neon */
+  max-height: 150px;
+}
+
+/* Efeito Neon com brilho */
+.promo-text {
+  font-size: 20px;  /* Tamanho do texto */
+  color: #fff;  /* Cor do texto */
+  font-weight: bold;  /* Deixa o texto em negrito */
+  text-transform: uppercase;  /* Texto em maiúsculas */
+  text-shadow: 
+      0 0 5px #fff, 
+      0 0 10px #190519, 
+      0 0 20px #190519, 
+      0 0 30px #190519, 
+      0 0 40px #420101, 
+      0 0 50px #420101, 
+      0 0 75px #420101;  /* Efeito de sombra para criar o efeito neon */
+  animation: neonTextAnimation 1.5s ease-in-out infinite alternate;  /* Animação de piscar no texto */
+}
+
+/* Animação para o efeito neon piscando */
+@keyframes neonAnimation {
+  0% {
+      box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
   }
-  
-  header {
-    text-align: center;
-    padding: 20px;
+  50% {
+      box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
   }
-  
-  #container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+  100% {
+      box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
   }
-  
-  .ebook {
-    width: 100%;
-    max-width: 400px; /* Ajuste conforme necessário para o seu design */
-    
+}
+
+@keyframes neonTextAnimation {
+  0% {
+      text-shadow: 
+          0 0 5px #fff, 
+          0 0 10px #ff00ff, 
+          0 0 20px #ff00ff, 
+          0 0 30px #ff00ff;
   }
-  
-  .ebook img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    border: none; /* Remova a borda anterior */
-    box-shadow: 0 0 20px #fcce00, 0 0 30px #fcce00, 0 0 40px #420101; /* Adiciona efeito neon */
+  50% {
+      text-shadow: 
+          0 0 10px #ff00ff, 
+          0 0 20px #ff00ff, 
+          0 0 30px #ff00ff, 
+          0 0 40px #ff00ff;
   }
-  
+  100% {
+      text-shadow: 
+          0 0 5px #fff, 
+          0 0 10px #ff00ff, 
+          0 0 20px #ff00ff, 
+          0 0 30px #ff00ff;
+  }
+}
+
+/* Para telas menores que 1024px (tablets e dispositivos menores) */
+@media (max-width: 1024px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  /* Adiciona mais espaçamento nas promoções */
+  .promo-box {
+      margin: 20px auto;  /* Margem superior e inferior, e centralizado */
+  }
+
   .ebook-content {
-    background-color: #000000;
-    margin-top: 4vh;
+      margin-top: 20px; /* Menos espaçamento se necessário */
   }
-  
-  .price-box {
-    
-    padding: 25px;
-    text-align: center;
-  }
-  
-  button {
-    background-color: #420101;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 26px;
-    border-radius: 5px;
-    box-shadow: 0 0 20px #fcce00, 0 0 30px #fcce00, 0 0 40px #420101; /* Adiciona efeito neon */
-    font-weight: bold;
-  }
-  
-  button:hover {
-    background-color: #a44a76;
-  }
-  
-  .logo img {
-  
-  }
-  h2 {
-    background: linear-gradient(45deg, #fc0015, #ff7300);
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline;
-    border-radius: 5px;
-    text-shadow: 0 0 2px #fcce00, 0 0 5px #fcce00, 0 0 10px #420101;
-    font-size: 30px;
-    
-  }
-  ul {
-    list-style-type:none;
-    padding: 1px;
-    
+}
+
+/* Para telas menores que 768px (celulares em modo retrato) */
+@media (max-width: 768px) {
+  body {
+      font-size: 12px;
   }
 
-  li {
-    margin-bottom: 5px;
-    padding: 5px;
-    font-weight: bold;
-    position: relative;
+  .container {
+      width: 95%;
   }
 
-  li::before {
-    content: "•";
-    color: #ffcc00;
-    font-size: 20px;
-    margin-right: 5px;
-  }
-  h3 {
-    color: #ffcc00;
-    background: linear-gradient(45deg, #860101, #fc3200);
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline;
-    text-shadow: 0 0 2px #f8be00, 0 0 5px #f8be00, 0 0 10px #420101;
-    margin-top: 20px; /* Ajuste conforme necessário */
-  
-    
-  }
-  h1 {
-    color: #ffffff; /* Cor do texto padrão */
-    font-style: italic;
+  /* Para garantir que a promoção tenha boa distância da imagem do ebook */
+  .promo-box {
+      margin: 30px auto; /* Adiciona mais espaçamento */
   }
 
-  .bulking {
-    color: #4CAF50; /* Cor para destacar "Bulking" */
-    font-style: italic;
+  .ebook-content {
+      margin-top: 25px; /* Ajusta o espaçamento entre os elementos */
+  }
+}
+
+/* Para telas menores que 480px (celulares em modo paisagem) */
+@media (max-width: 480px) {
+  body {
+      font-size: 10px;
   }
 
-  .cutting {
-    color: #FF0000; /* Cor para destacar "Cutting" */
-    font-style: italic;
-  }
-  /* Media Query para dispositivos menores, como celulares */
-  @media screen and (max-width: 600px) {
-    .ebook {
+  .container {
       width: 100%;
-      height: 100%;
-    }
   }
-  
+
+  /* Espaçamento menor para dispositivos muito pequenos */
+  .promo-box {
+      margin: 45px auto; /* Ajusta margem */
+  }
+
+  .ebook-content {
+      margin-top: 10px; /* Ajusta o espaçamento entre a imagem e o texto */
+  }
+}
